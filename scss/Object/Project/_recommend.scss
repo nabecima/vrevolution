@@ -1,0 +1,23 @@
+.p-recommend {
+  padding: 13rem 0 3rem;
+  background-color: $section_bg;
+
+  .c-container {
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+    width: 100%;
+    top: -30%;
+    left: 0;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 8rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 4rem;
+  }
+}

@@ -1,0 +1,58 @@
+.l-header {
+  padding: 1.5rem 0;
+  background-color: $section_bg;
+  color: $header_color;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__head {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &__sub {
+    font-size: 2.1rem;
+  }
+
+  &__info {
+    text-align: right;
+    margin-left: 0.5rem;
+  }
+
+  &__phone-number {
+    font-size: 3.3rem;
+  }
+
+  &__reception-time {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 1rem 0;
+
+    &__head {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__sub {
+      font-size: 1.2rem;
+    }
+
+    &__phone-number {
+      font-size: 2.5rem;
+    }
+
+    &__reception-time {
+      font-size: 1.2rem;
+    }
+
+    &__img-wrapper {
+      width: 3rem;
+    }
+  }
+}

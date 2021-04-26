@@ -1,0 +1,21 @@
+.l-footer {
+  padding-top: 3rem;
+  background-color: $footer_bg;
+
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+
+    &:first-of-type {
+      padding: 1.5rem 0;
+      color: $footer_first;
+      background-color: $footer_first_bg;
+    }
+
+    &:last-of-type {
+      padding: 1.8rem 0;
+      color: $footer_second;
+      background-color: $footer_second_bg;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.p-subscription {
+  background-color: $section_bg;
+  padding: 5rem 0;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.8rem;
+  }
+
+  &__img-wrapper {
+    width: 45%;
+    text-align: center;
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $subscription_color;
+      line-height: 1.3;
+    }
+  }
+
+  &__form {
+    width: 50%;
+    padding-top: 1rem;
+
+    div {
+      margin-bottom: 2rem;
+    }
+
+    input,
+    button {
+      width: 100%;
+    }
+
+    input {
+      padding: 1.5rem;
+      font-size: 1.8rem;
+      background-color: $subscription_color;
+      border: 5px solid #707070;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__annotation {
+    font-size: 1rem;
+    color: $subscription_color;
+
+    small {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0 2rem;
+
+    &__flex {
+      justify-content: center;
+    }
+
+    &__img-wrapper {
+      width: 70%;
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    &__form {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__img-wrapper {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

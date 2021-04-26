@@ -1,0 +1,42 @@
+.p-whoami {
+  padding: 5rem 0;
+  background-color: $off_white;
+
+  .c-container {
+    // width: 90%;
+    padding: 0 5rem;
+  }
+
+  h2,
+  h2 + div {
+    margin-bottom: 2rem;
+  }
+
+  &__youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .c-container {
+      padding: 0;
+    }
+
+    h2 {
+      width: 90%;
+      margin: 0 auto 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 3rem 0;
+  }
+}

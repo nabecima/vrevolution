@@ -1,0 +1,50 @@
+.p-profile {
+  background-color: $off_white;
+  padding: 4rem 0;
+
+  .c-container {
+    padding: 0;
+  }
+
+  &__card {
+    background-color: $profile_card_bg;
+    padding: 6rem;
+  }
+
+  &__label {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-text {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.8;
+
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0 4rem;
+
+    &__card {
+      padding: 1rem;
+    }
+
+    &__content {
+      flex-direction: column-reverse;
+    }
+
+    &__content-img {
+      align-self: center;
+      margin-bottom: 2rem;
+    }
+  }
+}

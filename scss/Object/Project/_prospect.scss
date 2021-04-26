@@ -1,0 +1,43 @@
+.p-prospect {
+  padding-bottom: 10rem;
+  background-color: $off_white;
+  .c-container {
+    background-color: $prospect_bg;
+    padding: 7rem 7rem 5rem;
+  }
+
+  .c-head {
+    color: $prospect_head;
+    border-top: 3px solid $prospect_head;
+    border-bottom: 3px solid $prospect_head;
+  }
+
+  &__content {
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+      margin-bottom: 1.8rem;
+
+      &:last-of-type {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 7rem;
+    .c-container {
+      padding: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 4rem;
+
+    &__content {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

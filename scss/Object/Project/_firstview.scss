@@ -1,0 +1,45 @@
+.p-firstview {
+  background-color: $firstview_bg;
+  padding: 2rem 0 2.5rem;
+
+  &__head {
+    margin-bottom: 2rem;
+  }
+
+  &__lifestyle {
+    background-color: $section_bg;
+    padding: 2rem;
+    border-radius: 8px;
+
+    h2 {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div {
+      width: 33%;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__image-wrapper {
+      div {
+        width: 49%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__lifestyle {
+      padding: 1.3rem;
+    }
+  }
+}
